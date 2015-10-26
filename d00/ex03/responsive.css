@@ -1,0 +1,51 @@
+			table
+			{
+				width: 90%;
+				table-layout: fixed;
+			}
+			td
+			{
+				padding: 5px;
+			}
+			.backgr
+			{
+				height: 100%;
+				background-image: url('http://www.wallpaperup.com/uploads/wallpapers/2013/03/24/63326/8cb989a132391a6bfa558502f32f653c.jpg');
+				background-size: 100%;
+				padding-right: 2%;
+				padding-left: 2%;
+			}
+			.elem_letter
+			{
+				vertical-align: center;
+				text-align: center;
+				font-size: 1vw;
+				font-family: Impact;
+				color: #2C3E50;
+			}
+			.elenb
+			{
+				vertical-align: bottom;
+				text-align: left;
+				font-size: 0.7vw;
+				color: white;
+			}
+			.elemass
+			{
+				vertical-align: top;
+				text-align: right;
+				font-size: 0.7vw;
+				color: white;
+			}
+			.metal
+			{
+				background: #4B6572;
+			}
+			.nometal
+			{
+				background: #56727E;
+			}
+			.nochimic
+			{
+				background: #60808D;
+			}

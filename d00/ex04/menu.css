@@ -1,0 +1,51 @@
+<style type="text/css">
+#menu
+{
+	width: 300px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a:link
+{
+	text-decoration: none;
+	font-family: Helvetica;
+}
+
+#menu li
+{
+	float: left;
+	text-align: center;
+	vertical-align: center;
+	list-style-type: none;
+	height: 40px;
+	font-size: 1em;
+	width: 100px;
+	line-height: 40px;
+	margin: 0 5px 0 0;
+	border-radius: 5px;
+	background-color: #16A085;
+	padding: 0;
+	border: 0;
+}
+
+#menu li:hover > .ssmenu {display: block;}
+#menu .ssmenu
+{
+	display: none;
+	list-style-type: none;
+	margin: 0 0 0 0;
+	padding: 0;
+	border: 0;
+}
+
+#menu .ssmenu li
+{
+ 	float: none;
+ 	margin: 1px 0 0 0;
+ 	padding: 0;
+ 	border: 0;
+}
+</style>

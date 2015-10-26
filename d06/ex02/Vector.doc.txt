@@ -1,0 +1,70 @@
+<----------------------------Vector Documentation---------------------------------------->
+         _ _,---._ 
+       ,-','       `-.___ 
+      /-;'               `._ 
+     /\/          ._   _,'o \ 
+    ( /\       _,--'\,','"`. ) 
+     |\      ,'o     \'    //\ 
+     |      \        /   ,--'""`-. 
+     :       \_    _/ ,-'         `-._ 
+      \        `--'  /                ) 
+       `.  \`._    ,'     ________,',' 
+         .--`     ,'  ,--` __\___,;' 
+          \`.,-- ,' ,`_)--'  /`.,' 
+           \( ;  | | )      (`-/ 
+             `--'| |)       |-/ 
+               | | |        | | 
+               | | |,.,-.   | |_ 
+               | `./ /   )---`  ) 
+              _|  /    ,',   ,-' 
+     -hrr-   ,'|_(    /-<._,' |--, 
+             |    `--'---.     \/ \ 
+             |          / \    /\  \ 
+           ,-^---._     |  \  /  \  \ 
+        ,-'        \----'   \/    \--`. 
+       /            \              \   \ 
+
+<----------------------------------------------------------------------------------------->
+                                Most important things:
+Calling: Vector(array(['dest' => Vertex], [['orig'] => Vertex]))
+
+Get functions :
+  exemple : $vector->getX()
+  describe: get[Value] = X = pos.x, Y = pos.y, Z = pos.z, W = pos.w.
+
+Doc:
+  $vector->doc();
+
+Get vector magnitude():
+  exemple: $vector->magnitude();
+  describe: Return the magnitude of vector.
+
+Normalize one vector:
+  exemple: ($norm = $vect->normalize())
+  describe: Return a new vector normalized.
+
+Add and substract vectors:
+  exemple: $result = $vector->(add - sub)(Vector $factor);
+  describe: add and sub function take one vector in param and return a new vector result of
+  computation.
+
+Opposite of one vector:
+  exemple: $opposite = $vector->opposite();
+  describe: return a new vector, opposite of $vector param.
+
+scalarProduct of one vector:
+  exemple: $scalar = $vector->scalarProduct($k);
+  describe: Return a new vector result of scalarProduct of $vector with factor $k.
+
+dotProduct of one vector:
+  exemple: $result = $vector->dotProduct(Vector $k)
+  describe: Return the float value dot product of $vector with factor $k;
+
+cos:
+  exemple: $cos = $vector->cos(Vector $vector2);
+  describe: Return the float value cosinus similarity value of two vector.
+
+crossProduct:
+  exemple: $result = $vector->crossProduct(Vector $vector2);
+  describe: Return a new vector, result of the cross product between $vector and $vector2.
+<----------------------------------------------------------------------------------------->

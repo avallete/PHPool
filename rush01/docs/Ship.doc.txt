@@ -1,0 +1,26 @@
+<-Ship--------------------------------------------------------------------------
+
+Functions for getting private atts :
+	getSprite()
+	getPp()
+	getPv()
+	getCm()
+	getManeuver()
+	getWeapons()
+	getSize()
+	getName()
+	getShield()
+	getPos()
+	getDirection()
+
+the list of the functons :
+	setPp() for adding pp as static::CONST
+	receive_dmg() down the pv att;
+	pp_set_shield() set shield
+	pp_set_speed()
+	pp_set_weapon($key) need the key of the weapon
+	pp_repair()
+
+Use the shoot(Ship $target, Weapon $weapon) that using the check_range(Ship $target, Weapon $weapon) 
+for checking the parameters of the weapon.
+--------------------------------------------------------------------------Ship->

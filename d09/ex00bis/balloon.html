@@ -1,0 +1,55 @@
+<html>
+	<head>
+	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<meta charset="utf-8"/>
+		<style type="text/css">
+		#balloon{
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+		}
+		.red{background-color: red;}
+		.green{background-color: green;}
+		.blue{background-color: blue;}
+		</style>
+	</head>
+	<body>
+		<div id='balloon' class="red"></div>
+		<script type="text/javascript">
+		$("#balloon").on("click", add_size);
+		$("#balloon").on("mouseout", mouse_out);
+		function add_size()
+		{
+			ball = $(this);
+			w = $(this).width();
+			if (w + 10 <= 420)
+				w += 10;
+			else
+				w = 200;
+			ball.width(w);
+			ball.height(w);
+			if (ball.hasClass("red"))
+				ball.attr('class', 'green');
+			else if (ball.hasClass("green"))
+				ball.attr('class', 'blue');
+			else if (ball.hasClass("blue"))
+				ball.attr('class', 'red');
+		}
+		function mouse_out()
+		{
+			ball = $(this);
+			w = $(this).width();
+			if (w >= 205)
+				w -= 5;
+			ball.width(w);
+			ball.height(w);
+			if (ball.hasClass("blue"))
+				ball.attr('class', 'green');
+			else if (ball.hasClass("green"))
+				ball.attr('class', 'red');
+			else if (ball.hasClass("red"))
+				ball.attr('class', 'blue');
+		}
+		</script>
+	</body>
+</html>

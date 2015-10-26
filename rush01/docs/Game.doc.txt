@@ -1,0 +1,12 @@
+<-Game--------------------------------------------------------------------------
+
+In the game class the __construct:
+	set the phase.
+You may use the add_ship(Array $ship) function.
+			receive an Array : $array['shipname'];
+							   $array['pos']['x']
+							   $array['pos']['y'];
+Use the destroyShip($key) function for destroy a ship: $key is the key of the ship in the instance array _ship.
+
+Use the getGamePhase() function for receive the instance of phase: refer to Pase.doc.txt. 
+--------------------------------------------------------------------------Game->

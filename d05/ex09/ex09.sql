@@ -1,0 +1,1 @@
+SELECT COUNT(*) AS 'nb_court-metrage' FROM db_avallete.film WHERE duree_min < 43;

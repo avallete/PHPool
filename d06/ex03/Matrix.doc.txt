@@ -1,0 +1,44 @@
+<----------------------------Matrix Documentation---------------------------------------->
+         _ _,---._ 
+       ,-','       `-.___ 
+      /-;'               `._ 
+     /\/          ._   _,'o \ 
+    ( /\       _,--'\,','"`. ) 
+     |\      ,'o     \'    //\ 
+     |      \        /   ,--'""`-. 
+     :       \_    _/ ,-'         `-._ 
+      \        `--'  /                ) 
+       `.  \`._    ,'     ________,',' 
+         .--`     ,'  ,--` __\___,;' 
+          \`.,-- ,' ,`_)--'  /`.,' 
+           \( ;  | | )      (`-/ 
+             `--'| |)       |-/ 
+               | | |        | | 
+               | | |,.,-.   | |_ 
+               | `./ /   )---`  ) 
+              _|  /    ,',   ,-' 
+             ,'|_(    /-<._,' |--, 
+             |    `--'---.     \/ \ 
+             |          / \    /\  \ 
+           ,-^---._     |  \  /  \  \ 
+        ,-'        \----'   \/    \--`. 
+       /            \              \   \ 
+
+<----------------------------------------------------------------------------------------->
+                                Most important things:
+Preset List: Matrix::IDENTITY, arg= Nothing.
+SCALE, arg='scale': scale contain scale factory.
+RX|RY|RZ, arg='angle': Contain the angle of rotation in Radian.  
+TRANSLATION, arg= 'vtc': Contain the translation vector. Need to be Class Vector.
+PROJECTION, arg='fov, ratio, near, far': 
+  fov = Field of View in degree.
+  ratio = Ratio of projection.
+  near = Clipping plane of the projection.
+  far = Cliping plan far of projection.
+
+Calling: Matrix(array('preset' =>(Matrix), $elements))
+
+You can create differents type of matrix with Matrix::const.
+Exemple: 
+  new Matrix('preset' => Matrix::IDENTITY).
+<----------------------------------------------------------------------------------------->

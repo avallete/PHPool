@@ -1,0 +1,1 @@
+SELECT COUNT(*) AS nb_abo, FLOOR(SUM(prix) / COUNT(*)) AS moy_abo, (SUM(duree_abo) % 42) AS ft from db_avallete.abonnement;

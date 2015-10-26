@@ -1,0 +1,20 @@
+.actif{
+	border: 3px green solid;
+}
+.inactif{
+	border: 0px;
+}
+.panel{
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+.shipnamec{
+	font-size: 25px;
+}
+.shipstatsc{
+	font-size: 15px;
+}
+.shipweaponsc{
+	font-size: 15px;
+}

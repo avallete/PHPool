@@ -1,0 +1,1 @@
+SELECT REVERSE(RIGHT(telephone, 9)) AS enohpelet FROM db_avallete.distrib WHERE telephone LIKE '05%';

@@ -1,0 +1,1 @@
+SELECT nom FROM db_avallete.distrib WHERE (id_distrib = 42 || id_distrib BETWEEN 62 AND 69 || id_distrib = 71 || id_distrib BETWEEN 88 AND 91) OR (LENGTH(LOWER(nom)) - LENGTH(REPLACE(LOWER(`nom`), 'y', ''))) = 2 LIMIT 5 OFFSET 2;

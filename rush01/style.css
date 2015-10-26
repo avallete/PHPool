@@ -1,0 +1,44 @@
+body
+{
+	font-family: Montserrat;
+	background-color: #ecf0f1;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+#board{
+	float: left;
+}
+#panel{
+	float : left;
+}
+
+.necron{
+	background-image: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-118905.jpg');
+	display: inline-block;
+}
+
+.image_necron{
+	float : left;
+	width: 60%;
+	height: 100%;
+}
+
+h2{
+	text-align: center;
+}
+
+li{
+	list-style: none;
+}
+.list_vaisseau{
+	color: #ecf0f1;
+	font-family: Arial;
+}
+.banner{
+	text-align: center;	
+	
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}

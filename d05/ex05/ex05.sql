@@ -1,0 +1,1 @@
+DELETE FROM db_avallete.ft_table WHERE id < 5;

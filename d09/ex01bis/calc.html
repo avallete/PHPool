@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<meta charset="utf-8">
+	</head>
+	<body>
+	<form name='calc'>
+	<input type="text" name="left" id="left" autofocus>
+		<select id="operator">
+			<option>+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+			<option>%</option>
+		</select>
+	<input type="text" name="right" id="right">
+	<input type="submit" value="Try me!">
+	</form>
+	</body>
+	<script type="text/javascript">
+	setInterval(function(){
+		print_alert("Please, use me...");
+	}, 30000);
+	function is_valid_number(value) 
+	{
+    	if ((parseFloat(value) == parseInt(value)) && !isNaN(value) && value >= 0)
+        	return true;
+        else
+    		return false;
+	}
+	function print_alert(value)
+	{
+		alert(value);
+		console.log(value);
+	}
+	document.calc.onsubmit=
+	function calc(){
+		var l = $("#left").val();
+		var r = $("#right").val();
+		var op = $("#operator").val();
+		var result = 0;
+		if (!is_valid_number(l) || !is_valid_number(r))
+				print_alert("Error :(");
+		else if ((op == '/' || op == '%') && (parseInt(l) == 0 || parseInt(r) == 0))
+				print_alert("It's over 9000!");
+		else
+		{
+			l = parseInt(l);
+			r = parseInt(r);
+			switch (op){
+				case "-": result = (l - r); break;
+				case "+": result = (l + r); break;
+				case "*": result = (l * r); break;
+				case "/": result = (l / r); break;
+				case "%": result = (l % r); break;
+				default: print_alert("Error :("); break;
+			}
+			print_alert(result);
+		}
+	}
+	</script>
+</html>

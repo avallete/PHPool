@@ -1,0 +1,7 @@
+<-Phase--------------------------------------------------------------------------
+
+
+For grep phase instance use getPhase();
+For going to the next phase you may use nextPhase();
+
+--------------------------------------------------------------------------Phase->

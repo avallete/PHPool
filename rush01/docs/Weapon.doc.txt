@@ -1,0 +1,16 @@
+<-Weapon--------------------------------------------------------------------------
+
+Functions for getting private atts :
+	getRange()
+	getRadius()
+	getCharges()
+	getName()
+
+The construct function need an arrray with all the caracteristics :
+	range = array();
+	radius;
+	charges;
+	name;
+
+
+--------------------------------------------------------------------------Weapon->

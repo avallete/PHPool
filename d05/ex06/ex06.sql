@@ -1,0 +1,1 @@
+SELECT titre, resum FROM db_avallete.film WHERE LOWER(resum) LIKE '%vincent%' ORDER BY id_film;

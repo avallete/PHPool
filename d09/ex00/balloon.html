@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<style type="text/css">
+		#balloon{
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+		}
+		.red{background-color: red;}
+		.green{background-color: green;}
+		.blue{background-color: blue;}
+		</style>
+	</head>
+	<body>
+		<div id='balloon' class="red" onclick="add_size()" onmouseout="mouse_out()"></div>
+		<script type="text/javascript">
+		function add_size()
+		{
+			var ball = document.getElementById("balloon");
+			var w = ball.offsetWidth;
+			if (w + 10 <= 420)
+				w += 10;
+			else
+				w = 200;
+			ball.style.width = w;
+			ball.style.height = w;
+			if (ball.className == "red")
+				ball.className = 'green';
+			else if (ball.className == "green")
+				ball.className = 'blue';
+			else if (ball.className == 'blue')
+				ball.className = 'red';
+		}
+		function mouse_out()
+		{
+			var ball = document.getElementById("balloon");
+			var color = ball.className;
+			var w = ball.offsetWidth;
+			if (w >= 205)
+				w -= 5;
+			ball.style.width = w;
+			ball.style.height = w;
+			if (ball.className == 'blue')
+				ball.className = 'green';
+			else if (ball.className == "green")
+				ball.className = 'red';
+			else if (ball.className = 'red')
+				ball.className = 'blue';
+		}
+		</script>
+	</body>
+</html>
